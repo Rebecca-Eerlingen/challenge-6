@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wachtwoordengenerator.css">
+    <!--Dit is een link naar het css bestand, daarmee pas je de stijl
+    van de website aan (in dit geval geen website maar een wachtwoord generator.)-->
+    
+    <title>generator</title>
+</head>
+<body>
+    <!--Een div is gebruik je om dingen die bij elkaar horen bij elkaar
+    e houden.-->
+    <div class="wrapper">
+        <!--Een class kun je gebruiken om meerdere dingen aan te passen in een keer-->
+        <div class="wachwoordDoos">
+            <input type="text" placeholder="Wachtwoord">
+            <i class="fa-regular fa-copy copyIcon"></i>
+            <!--Met input creeër je een tekstdoos waar je in kan voegen 
+            als gebruiker. met het type laat je zien wat je de gebruiker wilt
+            laten invoegen. 
+            type="text" gebruik je om iets te kunnen typen in een doosje
+            De i is om een icoontje toe te voegen-->
+        </div>
+        
+        <div class="lengteDoos">
+            <input type="range" min="6" max="16" value="8">
+            <span class="sliderNummer">8</span>
+            <!--Dit is ook een input het type is range,
+            hiermee maak je een slidebar-->
+        </div>
+
+        <button class="genereerWachtwoord">creeër wachtwoord</button>
+    </div>
+</body>
+<script src="wachtwoordengenerator.js"></script>
+<script src="https://kit.fontawesome.com/945653da1d.js" crossorigin="anonymous"></script>
+</html>

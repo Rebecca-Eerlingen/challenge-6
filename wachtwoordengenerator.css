@@ -1,0 +1,100 @@
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(201, 201, 255);
+}
+/* 
+    1. min-height is de minimale hoogte.
+    2. Display flex zorgd dat alles onder elkaar staat
+    3. align-items en justify-content center zorgd ervoor dat alles mooi
+    in het midden staat. 
+    4. background color is de kleur van de achtergrond van de pagina
+*/
+
+.wrapper{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.151);
+}
+/*
+    1. Wrapper is een class, daarom staat er een punt voor
+    2. dit is het gedeelte om alles heen (dus het doosje om in the typen,
+    de knop, enz)
+    3. De width is de breedte van het doosje
+    4. Background-color is de achtergrond kleur van het doosje.
+    5. Met border-radius rond je de hoekjes af.
+    6. Padding is de ruimte om alles heen hiermee zorg je dat 
+    bepaalde dingen niet tegen de ran aan zitten.
+    7. Box shadow is the shaduw van het doosje.
+*/
+
+.wrapper .wachwoordDoos{
+    position: relative;
+    height: 50px;
+}
+
+.wachwoordDoos input{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 45px 0 15px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: transparent;
+}
+
+.wachwoordDoos .copyIcon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.wrapper .lengteDoos{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lengteDoos input{
+    width: 100%;
+    height: 5px;
+    accent-color: #826afb;
+}
+
+.lengteDoos .sliderNummer{
+    min-width: 30px;
+    text-align: right;
+    font-size: 17px;
+    color: #826afb;
+}
+
+.wrapper .genereerWachtwoord{
+    width: 100%;
+    color: #fff;
+    padding: 12px 0;
+    margin-top: 20px;
+    background: #927dfc;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.genereerWachtwoord:hover{
+    background-color: #8370e2;
+}
