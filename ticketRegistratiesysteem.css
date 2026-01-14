@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b5b4ff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+.formulier, .tickets {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 45%;
+    border-radius: 20px;
+}
+
+#ticketLijst {
+  height: 250px;
+  overflow-y: auto;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.textBox{
+    min-height: 10px;
+    width: 97%;
+    display: flex;
+}
+
+#probleem{
+    height: 50px;
+}
+
+button {
+    background-color: #9090e0;
+    color: #272735;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #343449;
+    color: white;
+}
+
+.ticket {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid gray;
+}
+
+.hoog {
+    border-left-color: red;
+}
+
+.normaal {
+    border-left-color: orange;
+}
+
+.laag {
+    border-left-color: green;
+}
+

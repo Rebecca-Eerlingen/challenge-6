@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket Registratie Systeem</title>
+  <link rel="stylesheet" href="ticketRegistratiesysteem.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Formulier -->
+    <div class="formulier">
+      <h2>Nieuw ticket</h2>
+      <!-- input textvak waar je uitleg in kan zetten-->
+
+      <input class="textBox" type="text" id="naam" placeholder="Naam melder">
+      <input class="textBox" type="date" id="datum" placeholder="datum">
+      <textarea class="textBox" id="probleem" placeholder="Omschrijf het probleem"></textarea>
+
+      <select id="prioriteit">
+        <option value="laag">Laag</option>
+        <option value="normaal">Normaal</option>
+        <option value="hoog">Hoog</option>
+      </select>
+
+      <button id="opslaan">Ticket opslaan</button>
+    </div>
+
+    <!-- Ticket overzicht -->
+    <div id="box" class="tickets">
+      <h2>Tickets</h2>
+      <div id="ticketLijst"></div>
+    </div>
+
+  </div>
+
+  <script src="ticketRegistratiesysteem.js"></script>
+</body>
+</html>
